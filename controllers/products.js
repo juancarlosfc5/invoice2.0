@@ -1,4 +1,10 @@
-import { dataBase } from "../data.json";
+fetch("../data.json")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data); // Verifica que los datos se cargan correctamente
+  })
+  .catch(error => console.error("Error cargando JSON:", error));
+
 
 export function listProduct(productsComponent) {
   // Referencias a los elementos en el Shadow DOM
