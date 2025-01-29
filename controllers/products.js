@@ -1,24 +1,25 @@
-fetch("../data.json")
-  .then(response => response.json())
-  .then(data => {
-    console.log(data); // Verifica que los datos se cargan correctamente
-  })
-  .catch(error => console.error("Error cargando JSON:", error));
+import { getProducts } from "../api/productsApi.js";
 
-
-export function listProduct(productsComponent) {
+export async function listProduct(productsComponent) {
   // Referencias a los elementos en el Shadow DOM
   const item = productsComponent.shadowRoot.querySelector("#productList");
   const productIdInput = productsComponent.shadowRoot.querySelector("#productIdInput");
   const unitaryValueInput = productsComponent.shadowRoot.querySelector("#unitaryValue");
 
-  // Agregar los productos al select de opciones
-  dataBase.forEach((element) => {
-    const option = document.createElement("option");
-    option.value = element.id; // Verificar que el value sea el id del producto
-    option.textContent = element.product;
-    item.appendChild(option);
-  });
+  try {
+    // Obtener productos desde JSON Server
+    const dataBase = await getProducts();
+
+    // Limpiar opciones previas
+    item.innerHTML = "";
+
+    // Agregar los productos al select de opciones
+    dataBase.forEach((element) => {
+      const option = document.createElement("option");
+      option.value = element.id; // ID del producto
+      option.textContent = element.product; // Nombre del producto
+      item.appendChild(option);
+    });
 
   // Evento para actualizar los campos código y valor unitario al seleccionar un producto
   item.addEventListener("change", (event) => {
@@ -35,4 +36,7 @@ export function listProduct(productsComponent) {
       unitaryValueInput.value = "";
     }
   });
+} catch (error) {
+  console.error("Error al obtener los productos:", error);
+}
 }
