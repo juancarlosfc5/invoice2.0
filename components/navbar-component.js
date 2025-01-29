@@ -25,7 +25,7 @@ export class NavbarComponent extends LitElement {
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="src/campus.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
+            <img src="public/campus.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
             Invoice 2.0
           </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">

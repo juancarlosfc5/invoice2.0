@@ -14,7 +14,6 @@ export function setupButtons(buttonsElement) {
 
     editBtn.addEventListener("click", () => {
         toggleButtons(true);
-        showEditForm();
     });
 
     deleteBtn.addEventListener("click", () => {
