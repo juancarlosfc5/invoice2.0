@@ -1,12 +1,11 @@
 {
   "products": [
     {
-      "id": "1",
-      "cod": "MOUSE-LOGI",
       "product": "Mouse Logitech MX Master 3",
       "price": 99.99,
-      "stock": 74,
-      "imageUrl": "https://www.alkosto.com/medias/097855175359-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxNDQ4NnxpbWFnZS93ZWJwfGFHSm1MMmczWmk4eE5EUTNOREV6TlRZek16azFNQzh3T1RjNE5UVXhOelV6TlRsZk1EQXhYemMxTUZkNE56VXdTQXwyNjVjYjk1OGIzNDNkMzI0YTY5NjdkNGNmOThhZjgwYTRhYTE0OGVmNjBmZWRmNzhiYjAyN2M5ZGY5MWJlMDNj"
+      "stock": 24,
+      "imageUrl": "https://www.alkosto.com/medias/097855175359-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxNDQ4NnxpbWFnZS93ZWJwfGFHSm1MMmczWmk4eE5EUTNOREV6TlRZek16azFNQzh3T1RjNE5UVXhOelV6TlRsZk1EQXhYemMxTUZkNE56VXdTQXwyNjVjYjk1OGIzNDNkMzI0YTY5NjdkNGNmOThhZjgwYTRhYTE0OGVmNjBmZWRmNzhiYjAyN2M5ZGY5MWJlMDNj",
+      "id": "1"
     },
     {
       "id": "2",
@@ -73,15 +72,14 @@
       "imageUrl": "https://www.ergosillas.co/images/sillas-presidente/fone-ultra-silla-presidente-para-oficina/fone-silla-presidente-para-oficina-0.jpg"
     },
     {
-      "id": "10",
-      "cod": "USB-HUB",
       "product": "Hub USB 3.0 con 4 Puertos",
       "price": 19.99,
       "stock": 88,
-      "imageUrl": "https://media.startech.com/cms/products/gallery_large/st53004u1c.main.jpg"
+      "imageUrl": "https://media.startech.com/cms/products/gallery_large/st53004u1c.main.jpg",
+      "id": "10"
     },
     {
-      "id": "101",
+      "id": "11",
       "cod": "TECLADO-MECH",
       "product": "Teclado Mecánico Redragon K552",
       "price": 45.99,
@@ -188,6 +186,31 @@
         "subtotal": 99.94999999999999,
         "iva": 18.990499999999997,
         "total": 118.94049999999999
+      }
+    },
+    {
+      "id": "eb4e",
+      "nroFactura": "194B44499D1",
+      "header": {
+        "identificacion": "1100967550",
+        "nombres": "Juan Carlos",
+        "apellido": "Flórez Cubides",
+        "direccion": "194B44499D1",
+        "email": "juanfc.iq@gmail.com"
+      },
+      "detailFact": [
+        {
+          "cod": "TECLADO-MECH",
+          "product": "Teclado Mecánico Redragon K552",
+          "price": 45.99,
+          "quantity": 5,
+          "subtotal": 229.95000000000002
+        }
+      ],
+      "summary": {
+        "subtotal": 229.95000000000002,
+        "iva": 43.69050000000001,
+        "total": 273.64050000000003
       }
     }
   ]

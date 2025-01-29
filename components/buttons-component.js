@@ -1,5 +1,5 @@
 import { LitElement, html, css } from "lit";
-import { setupButtons } from "../controllers/buttons.js"; // Importar el controlador
+import { setupButtons, editProduct, deleteProductFromServer, showDeleteTable, handleDeleteAction, showProductList } from "../controllers/buttons.js"; // Importar el controlador
 
 export class ButtonsComponent extends LitElement {
   static styles = css`
@@ -17,6 +17,7 @@ export class ButtonsComponent extends LitElement {
 
   firstUpdated() {
     setupButtons(this);
+    editProduct(this);
   }
 
   render() {
@@ -29,7 +30,7 @@ export class ButtonsComponent extends LitElement {
       <div class="container">
         <button id="createBtn" type="button" class="btn btn-success">Crear</button>
         <button id="editBtn" type="button" class="btn btn-warning">Editar</button>
-        <button id="deleteBtn" type="button" class="btn btn-danger">Eliminar</button>
+        <button id="deleteBtn" type="button" class="btn btn-danger" @click="${() => handleDeleteAction(this)}">Eliminar</button>
         <button id="listBtn" type="button" class="btn btn-primary">Listar</button>
         <button id="cancelBtn" type="button" class="btn btn-secondary">Cancelar</button>
       </div>
