@@ -5,70 +5,80 @@
       "cod": "MOUSE-LOGI",
       "product": "Mouse Logitech MX Master 3",
       "price": 99.99,
-      "stock": 74
+      "stock": 74,
+      "imageUrl": "https://www.alkosto.com/medias/097855175359-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxNDQ4NnxpbWFnZS93ZWJwfGFHSm1MMmczWmk4eE5EUTNOREV6TlRZek16azFNQzh3T1RjNE5UVXhOelV6TlRsZk1EQXhYemMxTUZkNE56VXdTQXwyNjVjYjk1OGIzNDNkMzI0YTY5NjdkNGNmOThhZjgwYTRhYTE0OGVmNjBmZWRmNzhiYjAyN2M5ZGY5MWJlMDNj"
     },
     {
       "id": "2",
       "cod": "KEY-RGB",
       "product": "Teclado Mecánico RGB Redragon",
       "price": 59.99,
-      "stock": 25
+      "stock": 25,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_943708-MLU76318626696_052024-O.webp"
     },
     {
       "id": "3",
       "cod": "MONITOR-DELL",
       "product": "Monitor Dell 24'' Full HD",
       "price": 149.99,
-      "stock": 52
+      "stock": 52,
+      "imageUrl": "https://www.pcware.com.co/wp-content/uploads/2018/07/monitores-dell-24-pulgadas-p2417hg-led-full-hd_ft_700x700.webp"
     },
     {
       "id": "4",
       "cod": "PC-GAMER",
       "product": "PC Gamer Ryzen 5 5600X + RTX 3060",
       "price": 1299.99,
-      "stock": 33
+      "stock": 33,
+      "imageUrl": "https://www.ginger6.com/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/c/a/cam-vidzephyr-blk_1_2.jpg"
     },
     {
       "id": "5",
       "cod": "WEBCAM-HD",
       "product": "Webcam Logitech C920 HD Pro",
       "price": 69.99,
-      "stock": 40
+      "stock": 40,
+      "imageUrl": "https://m.media-amazon.com/images/I/618ZZ-j1ZML.jpg"
     },
     {
       "id": "6",
       "cod": "HEADSET-GAMING",
       "product": "Headset Gaming HyperX Cloud II",
       "price": 99.99,
-      "stock": 18
+      "stock": 18,
+      "imageUrl": "https://alavista.co/wp-content/uploads/2022/02/hyperx_cloud_ii_red_2_main_mixer_1512x.webp"
     },
     {
       "id": "7",
       "cod": "LAPTOP-HP",
       "product": "Laptop HP Pavilion 15 Ryzen 7",
       "price": 849.99,
-      "stock": 28
+      "stock": 28,
+      "imageUrl": "https://compucentro.co/wp-content/uploads/197497202601-002-750Wx750H.png"
     },
     {
       "id": "8",
       "cod": "SSD-SAMSUNG",
       "product": "Samsung 970 EVO Plus 1TB SSD NVMe",
       "price": 119.99,
-      "stock": 61
+      "stock": 61,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_753531-MLA49233732894_022022-O.webp"
     },
     {
       "id": "9",
       "cod": "CHAIR-ERGONOMIC",
       "product": "Silla Ergonómica para Oficina",
       "price": 199.99,
-      "stock": 45
+      "stock": 45,
+      "imageUrl": "https://www.ergosillas.co/images/sillas-presidente/fone-ultra-silla-presidente-para-oficina/fone-silla-presidente-para-oficina-0.jpg"
     },
     {
       "id": "10",
       "cod": "USB-HUB",
       "product": "Hub USB 3.0 con 4 Puertos",
       "price": 19.99,
-      "stock": 88
+      "stock": 88,
+      "imageUrl": "https://media.startech.com/cms/products/gallery_large/st53004u1c.main.jpg"
     }
   ],
   "invoices": [

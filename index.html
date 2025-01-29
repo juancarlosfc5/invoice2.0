@@ -12,32 +12,22 @@
     <title>Invoice 2.0</title>
 </head>
 <body>
-  <!-- Nav bar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="src/campuslands.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-        Invoice 2.0
-      </a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#" data-verocultar='["c"]'>Vender</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-verocultar='["ct"]'>Productos</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> 
+  <!-- Navbar -->
+  <div class="container">  
+    <navbar-component></navbar-component>
+  </div>
 
-  <!-- Web Components -->
+  <!-- Factura -->
   <div class="container">
       <header-component></header-component>
       <products-component></products-component>
       <detail-component></detail-component>
       <summary-component></summary-component>
+  </div>
+
+  <!-- Botones productos -->
+  <div class="container">  
+    <buttons-component></buttons-component>
   </div>
 </body>
 </html>

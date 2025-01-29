@@ -13,7 +13,7 @@ export class HeaderComponent extends LitElement {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
       <div class="container text-center card">
         <div class="row align-items-start card-header">
-          <h3>Apple Store - No. Factura</h3>
+          <h3>Campuslands Store - No. Factura</h3>
           <div class="col">
             <input id="invoiceID" class="form-control text-center" type="text" .value="${this.id}" aria-label="Disabled input example" disabled readonly>
           </div>
