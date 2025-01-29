@@ -1,74 +1,126 @@
 {
-    "products": [
-      {
-        "id": "1",
-        "cod": "MOUSE-LOGI",
-        "product": "Mouse Logitech MX Master 3",
-        "price": 99.99,
-        "stock": 74
+  "products": [
+    {
+      "id": "1",
+      "cod": "MOUSE-LOGI",
+      "product": "Mouse Logitech MX Master 3",
+      "price": 99.99,
+      "stock": 74
+    },
+    {
+      "id": "2",
+      "cod": "KEY-RGB",
+      "product": "Teclado Mecánico RGB Redragon",
+      "price": 59.99,
+      "stock": 25
+    },
+    {
+      "id": "3",
+      "cod": "MONITOR-DELL",
+      "product": "Monitor Dell 24'' Full HD",
+      "price": 149.99,
+      "stock": 52
+    },
+    {
+      "id": "4",
+      "cod": "PC-GAMER",
+      "product": "PC Gamer Ryzen 5 5600X + RTX 3060",
+      "price": 1299.99,
+      "stock": 33
+    },
+    {
+      "id": "5",
+      "cod": "WEBCAM-HD",
+      "product": "Webcam Logitech C920 HD Pro",
+      "price": 69.99,
+      "stock": 40
+    },
+    {
+      "id": "6",
+      "cod": "HEADSET-GAMING",
+      "product": "Headset Gaming HyperX Cloud II",
+      "price": 99.99,
+      "stock": 18
+    },
+    {
+      "id": "7",
+      "cod": "LAPTOP-HP",
+      "product": "Laptop HP Pavilion 15 Ryzen 7",
+      "price": 849.99,
+      "stock": 28
+    },
+    {
+      "id": "8",
+      "cod": "SSD-SAMSUNG",
+      "product": "Samsung 970 EVO Plus 1TB SSD NVMe",
+      "price": 119.99,
+      "stock": 61
+    },
+    {
+      "id": "9",
+      "cod": "CHAIR-ERGONOMIC",
+      "product": "Silla Ergonómica para Oficina",
+      "price": 199.99,
+      "stock": 45
+    },
+    {
+      "id": "10",
+      "cod": "USB-HUB",
+      "product": "Hub USB 3.0 con 4 Puertos",
+      "price": 19.99,
+      "stock": 88
+    }
+  ],
+  "invoices": [
+    {
+      "id": "7224",
+      "nroFactura": "194B0490B1A",
+      "header": {
+        "identificacion": "1100967550",
+        "nombres": "Juan Carlos",
+        "apellido": "Flórez Cubides",
+        "direccion": "194B0490B1A",
+        "email": "juanfc.iq@gmail.com"
       },
-      {
-        "id": "2",
-        "cod": "KEY-RGB",
-        "product": "Teclado Mecánico RGB Redragon",
-        "price": 59.99,
-        "stock": 25
-      },
-      {
-        "id": "3",
-        "cod": "MONITOR-DELL",
-        "product": "Monitor Dell 24'' Full HD",
-        "price": 149.99,
-        "stock": 52
-      },
-      {
-        "id": "4",
-        "cod": "PC-GAMER",
-        "product": "PC Gamer Ryzen 5 5600X + RTX 3060",
-        "price": 1299.99,
-        "stock": 33
-      },
-      {
-        "id": "5",
-        "cod": "WEBCAM-HD",
-        "product": "Webcam Logitech C920 HD Pro",
-        "price": 69.99,
-        "stock": 40
-      },
-      {
-        "id": "6",
-        "cod": "HEADSET-GAMING",
-        "product": "Headset Gaming HyperX Cloud II",
-        "price": 99.99,
-        "stock": 18
-      },
-      {
-        "id": "7",
-        "cod": "LAPTOP-HP",
-        "product": "Laptop HP Pavilion 15 Ryzen 7",
-        "price": 849.99,
-        "stock": 28
-      },
-      {
-        "id": "8",
-        "cod": "SSD-SAMSUNG",
-        "product": "Samsung 970 EVO Plus 1TB SSD NVMe",
-        "price": 119.99,
-        "stock": 61
-      },
-      {
-        "id": "9",
-        "cod": "CHAIR-ERGONOMIC",
-        "product": "Silla Ergonómica para Oficina",
-        "price": 199.99,
-        "stock": 45
-      },
-      {
-        "id": "10",
-        "cod": "USB-HUB",
-        "product": "Hub USB 3.0 con 4 Puertos",
-        "price": 19.99,
-        "stock": 88
+      "detailFact": [
+        {
+          "cod": "MONITOR-DELL",
+          "product": "Monitor Dell 24'' Full HD",
+          "price": 149.99,
+          "quantity": 3,
+          "subtotal": 449.97
+        }
+      ],
+      "summary": {
+        "subtotal": 449.97,
+        "iva": 85.49430000000001,
+        "total": 535.4643000000001
       }
-    ]
-}  
+    },
+    {
+      "id": "4822",
+      "nroFactura": "194B0499BF4",
+      "header": {
+        "identificacion": "1100967550",
+        "nombres": "Juan Carlos",
+        "apellido": "Flórez Cubides",
+        "direccion": "194B0499BF4",
+        "email": "juanfc.iq@gmail.com"
+      },
+      "detailFact": [
+        {
+          "cod": "MONITOR-DELL",
+          "product": "Monitor Dell 24'' Full HD",
+          "price": 149.99,
+          "quantity": 1,
+          "subtotal": 149.99
+        }
+      ],
+      "summary": {
+        "subtotal": 149.99,
+        "iva": 28.4981,
+        "total": 178.4881
+      }
+    }
+  ]
+}

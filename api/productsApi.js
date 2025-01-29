@@ -58,3 +58,24 @@ export {
     patchProduct as patchProducts,
     deleteProduct as deleteProducts
 };
+
+const postInvoice = async (invoice) => {
+    try {
+        const response = await fetch(`${URL_API}/invoices`, {
+            method: "POST",
+            headers: myHeaders,
+            body: JSON.stringify(invoice),
+        });
+
+        if (!response.ok) {
+            throw new Error(`Error ${response.status}: No se pudo guardar la factura`);
+        }
+
+        return await response.json();
+    } catch (error) {
+        console.error("Error en la solicitud POST de factura:", error.message);
+        return null;
+    }
+};
+
+export { postInvoice };

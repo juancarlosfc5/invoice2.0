@@ -1,4 +1,5 @@
 import { getInvoiceDetails } from "./detail.js";
+import { postInvoice } from "../api/productsApi.js";
 
 let facturas = JSON.parse(localStorage.getItem("facturas")) || [];
 
@@ -13,31 +14,38 @@ export function calculateSummary(summaryComponent) {
   });
 }
 
-export function processPayment(summaryComponent) {
+export async function processPayment(summaryComponent) {
   const header = getHeaderInfo();
   const detailFact = getInvoiceDetails();
 
   if (!header || detailFact.length === 0) {
-    alert("Por favor complete todos los campos y registre productos en la factura.");
-    return;
+      alert("Por favor complete todos los campos y registre productos en la factura.");
+      return;
   }
 
   const factura = {
-    nroFactura: _getInvoiceID(),
-    header,
-    detailFact,
-    summary: {
-      subtotal: summaryComponent.subtotal,
-      iva: summaryComponent.iva,
-      total: summaryComponent.total,
-    },
+      nroFactura: _getInvoiceID(),
+      header,
+      detailFact,
+      summary: {
+          subtotal: summaryComponent.subtotal,
+          iva: summaryComponent.iva,
+          total: summaryComponent.total,
+      },
   };
 
-  facturas.push(factura);
-  localStorage.setItem("facturas", JSON.stringify(facturas));
-
-  alert("¡Factura generada con éxito!");
-  reloadPage();
+  try {
+      const response = await postInvoice(factura);
+      if (response) {
+          alert("¡Factura guardada en el servidor con éxito!");
+          reloadPage();
+      } else {
+          alert("Error al guardar la factura en el servidor.");
+      }
+  } catch (error) {
+      console.error("Error al procesar el pago:", error);
+      alert("Ocurrió un error. Intente nuevamente.");
+  }
 }
 
 function getHeaderInfo() {

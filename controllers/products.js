@@ -10,9 +10,6 @@ export async function listProduct(productsComponent) {
     // Obtener productos desde JSON Server
     const dataBase = await getProducts();
 
-    // Limpiar opciones previas
-    item.innerHTML = "";
-
     // Agregar los productos al select de opciones
     dataBase.forEach((element) => {
       const option = document.createElement("option");
