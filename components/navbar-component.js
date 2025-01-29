@@ -1,5 +1,5 @@
 import { LitElement, html, css } from "lit";
-import { setupNavbar } from "../controllers/navbar.js"; // Ajusta la ruta si es necesario
+import { setupNavbar } from "../controllers/navbar.js";
 
 export class NavbarComponent extends LitElement {
   static styles = css`
@@ -16,7 +16,7 @@ export class NavbarComponent extends LitElement {
   `;
 
   firstUpdated() {
-    setupNavbar(this); // Se pasa el componente para manejar eventos dentro del shadow DOM
+    setupNavbar(this);
   }
 
   render() {

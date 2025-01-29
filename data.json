@@ -79,6 +79,14 @@
       "price": 19.99,
       "stock": 88,
       "imageUrl": "https://media.startech.com/cms/products/gallery_large/st53004u1c.main.jpg"
+    },
+    {
+      "id": "101",
+      "cod": "TECLADO-MECH",
+      "product": "Teclado Mecánico Redragon K552",
+      "price": 45.99,
+      "stock": 50,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_695290-MLU72761233650_112023-O.webp"
     }
   ],
   "invoices": [
@@ -130,6 +138,56 @@
         "subtotal": 149.99,
         "iva": 28.4981,
         "total": 178.4881
+      }
+    },
+    {
+      "id": "3c04",
+      "nroFactura": "194B22915EC",
+      "header": {
+        "identificacion": "1100967550",
+        "nombres": "Juan Carlos",
+        "apellido": "Flórez Cubides",
+        "direccion": "Cra 28 No. 51-40 Apto 102",
+        "email": "juanfc.iq@gmail.com"
+      },
+      "detailFact": [
+        {
+          "cod": "KEY-RGB",
+          "product": "Teclado Mecánico RGB Redragon",
+          "price": 59.99,
+          "quantity": 4,
+          "subtotal": 239.96
+        }
+      ],
+      "summary": {
+        "subtotal": 239.96,
+        "iva": 45.592400000000005,
+        "total": 285.55240000000003
+      }
+    },
+    {
+      "id": "fd3c",
+      "nroFactura": "194B2319943",
+      "header": {
+        "identificacion": "1100967550",
+        "nombres": "Juan Carlos",
+        "apellido": "Flórez Cubides",
+        "direccion": "Cra 28 No. 51-40 Apto 102",
+        "email": "juanfc.iq@gmail.com"
+      },
+      "detailFact": [
+        {
+          "cod": "USB-HUB",
+          "product": "Hub USB 3.0 con 4 Puertos",
+          "price": 19.99,
+          "quantity": 5,
+          "subtotal": 99.94999999999999
+        }
+      ],
+      "summary": {
+        "subtotal": 99.94999999999999,
+        "iva": 18.990499999999997,
+        "total": 118.94049999999999
       }
     }
   ]
